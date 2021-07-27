@@ -1,6 +1,7 @@
-const MAX_RATE = 4
-const MIN_RATE = 0.5
-const INCREMENT = 0.25
+const MAX_RATE = 2
+const MIN_RATE = 0.9
+const INCREMENT = 0.1
+const DECIMALS = 1
 
 const MENU_ITEM_HIGHLIGHT = 'rgb(236, 82, 82)'
 
@@ -76,7 +77,7 @@ function setPlaybackRate(rate, video, menu) {
 				video.playbackRate = newRate
 				document.querySelector(
 					"[data-purpose='playback-rate-button']",
-				).innerText = newRate
+				).innerText = newRate.toFixed(DECIMALS)
 			})
 		})
 	} else {
@@ -84,13 +85,13 @@ function setPlaybackRate(rate, video, menu) {
 			video.playbackRate = rate
 			document.querySelector(
 				"[data-purpose='playback-rate-button']",
-			).innerText = rate
+			).innerText = rate.toFixed(DECIMALS)
 		})
 	}
 }
 
 function renderListItem(index) {
-	const playbackNumber = MAX_RATE - INCREMENT * index
+	const playbackNumber = (MAX_RATE - INCREMENT * index).toFixed(DECIMALS)
 	const listItem = `
 		<li class="menu--menu--2Pw42 menu--item--2IgLt" role="menuitem" role="presentation">
 			<a tabindex="-1" role="menuitem">
