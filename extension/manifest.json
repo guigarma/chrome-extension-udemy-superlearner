@@ -1,7 +1,7 @@
 {
-	"name": "Udemy Video Playback Speed",
+	"name": "Udemy Superlearner",
 	"version": "1.2.8",
-	"description": "Adds additional playback speed options for videos on Udemy.",
+	"description": "More granular speed options for videos on Udemy.",
 	"manifest_version": 2,
 	"icons": {
 		"16": "icon.png",
