@@ -1,7 +1,7 @@
 {
 	"name": "Udemy Superlearner",
-	"version": "1.2.8",
-	"description": "More granular speed options for videos on Udemy.",
+	"version": "1.0.0",
+	"description": "Learn progressively faster with more granular speed options for videos on Udemy.",
 	"manifest_version": 2,
 	"icons": {
 		"16": "icon.png",
